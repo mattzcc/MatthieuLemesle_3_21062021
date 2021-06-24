@@ -1,0 +1,38 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    // font-family: 'Shrikhand', cursive;
+    margin: 0;
+}
+
+$color-primary: #9356DC;
+$color-secondary: #FF79DA;
+$color-tertiary: #99E2D0;
+$color-titles : black;
+
+.header {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.header__arrow-left {
+    display: none;
+}
+
+.top-content__search {
+    display: flex;
+    justify-content: center;
+    background-color: #E9E9E9;
+    padding: 15px 10px;
+
+    .top-content__logoloc {
+        padding-left: 30px;
+    }
+
+    .top-content__searchfield {
+        background-color: transparent;
+        border: none;
+        padding-left: 20px;
+    }
+}
