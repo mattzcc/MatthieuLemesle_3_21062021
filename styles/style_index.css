@@ -44,6 +44,16 @@ body {
   font-size: 0.9em;
 }
 
+.top-content__desc {
+  background-color: #f2f2f2;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+.top-content__desc h1 {
+  margin: 0;
+}
+
 .label-restaurant__img img {
   width: 20%;
   height: 20%;
