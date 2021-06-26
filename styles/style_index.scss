@@ -47,14 +47,36 @@ $color-shadow : rgb(190, 190, 190);
 }
 
 .top-content__desc {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     background-color: #f2f2f2;
     padding-top: 30px;
     padding-bottom: 50px;
 
     h1 {
         margin: 0;
+        width: 70%;
     }
+
+    p {
+        font-weight: 100;
+        width: 80%;
+    }
+
 }
+
+.button {
+    background: radial-gradient(ellipse farthest-corner at 20px 0, $color-secondary 0%, $color-primary 100%);
+    width: max-content;
+    height: 100%;
+    color: white;
+    border-radius: 30px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+
 
 
 
