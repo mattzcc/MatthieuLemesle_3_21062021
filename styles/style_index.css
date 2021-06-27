@@ -243,6 +243,7 @@ nav a {
   display: block;
   height: 200px;
   padding-top: 20px;
+  padding-left: 25px;
 }
 
 .footer a {
@@ -252,6 +253,8 @@ nav a {
 
 .footer__logo {
   font-family: 'Shrikhand', cursive;
+  padding-bottom: 15px;
+  font-size: 1.2em;
 }
 
 .footer__bloclinks {
@@ -266,6 +269,13 @@ nav a {
 
 .footer__bloclinks h4 {
   margin: 0;
+  font-size: 0.9em;
+  font-weight: normal;
+  padding-bottom: 10px;
+}
+
+.footer__bloclinks i {
+  padding-right: 5px;
 }
 
 .footer__bloclinks .footer__icon {
