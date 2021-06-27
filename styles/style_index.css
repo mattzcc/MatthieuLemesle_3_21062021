@@ -237,4 +237,40 @@ nav a {
   bottom: 145px;
   left: 230px;
 }
+
+.footer {
+  background-color: #353535;
+  display: block;
+  height: 200px;
+  padding-top: 20px;
+}
+
+.footer a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer__logo {
+  font-family: 'Shrikhand', cursive;
+}
+
+.footer__bloclinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer__bloclinks h4 {
+  margin: 0;
+}
+
+.footer__bloclinks .footer__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 /*# sourceMappingURL=style_index.css.map */
