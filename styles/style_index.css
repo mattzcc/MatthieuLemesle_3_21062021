@@ -77,7 +77,7 @@ body {
   height: 100%;
   color: white;
   border-radius: 30px;
-  padding: 10px;
+  padding: 15px;
   margin-top: 10px;
   -webkit-box-shadow: 0 4px 6px #bebebe;
           box-shadow: 0 4px 6px #bebebe;
@@ -183,7 +183,7 @@ nav a {
           flex-direction: column;
   background-color: white;
   border-radius: 15px 15px;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   -webkit-box-shadow: 0 2px 4px #bebebe;
           box-shadow: 0 2px 4px #bebebe;
 }
@@ -241,7 +241,7 @@ nav a {
 .footer {
   background-color: #353535;
   display: block;
-  height: 200px;
+  height: 180px;
   padding-top: 20px;
   padding-left: 25px;
 }
