@@ -133,6 +133,15 @@ nav {
         color: #7e7e7e;
         padding: 0 25px 0 10px;
     }
+
+    &:hover {
+        background-color: (lighten($color: $color-primary, $amount: 35%));
+        box-shadow: 2px 4px 8px $color-shadow;
+
+        .nav-btn__logo {
+            color: $color-primary;
+        }
+    }
 }
 
 .restaurants {
