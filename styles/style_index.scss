@@ -123,9 +123,8 @@ nav {
     &__number {
         color: white;
         background-color: $color-primary;
-        border: 2px solid $color-primary;
         border-radius: 50%;
-        padding: 0px 5px;
+        padding: 1px 6px;
         position: relative;
         right: 10px;
     }
@@ -226,8 +225,6 @@ nav {
     }
 }
 
-// Footer
-
 .footer {
     background-color: #353535;
     display: block;
@@ -265,5 +262,22 @@ nav {
 
     .footer__icon {
         display: flex;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+
+    nav {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .restaurants__content {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        grid-template-columns: 1fr;
     }
 }
