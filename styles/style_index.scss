@@ -11,7 +11,6 @@ $color-background: #f2f2f2;
 
 body {
     font-family: 'Roboto', sans-serif;
-    // font-family: 'Shrikhand', cursive;
     margin: 0;
 }
 
@@ -98,10 +97,6 @@ body {
 }
 
 nav {
-    // display: flex;
-    // flex-direction: column;
-    // justify-content: center;
-    // align-items: center;
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
@@ -138,6 +133,10 @@ nav {
     &__logo {
         color: #7e7e7e;
         padding: 0 25px 0 10px;
+    }
+
+    &__title {
+        margin: 25px 0 25px 0;
     }
 
     &:hover {
