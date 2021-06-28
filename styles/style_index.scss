@@ -84,7 +84,7 @@ body {
 .howtouse {
     display: flex;
     flex-direction: column;
-    padding-top: 50px;
+    padding: 50px 25px;
 
     h2 {
         margin: 0 0 20px 0;
@@ -92,15 +92,19 @@ body {
 }
 
 nav {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+
 
     a {
         text-decoration: none;
         color: $color-titles;
-        width: 80%;
+        width: 96%;
     }
 
 }
@@ -112,7 +116,7 @@ nav {
     background-color: $color-background;
     margin-bottom: 20px;
     border-radius: 20px;
-    font-size: 0.8em;
+    font-size: 0.9em;
     @include shadow;
 
     &__number {
@@ -133,10 +137,7 @@ nav {
 
 .restaurants {
     background-color: $color-background;
-    padding: 50px 20px;
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-items: center;
+    padding: 50px 25px;
 
     a {
         text-decoration: none;
@@ -145,7 +146,12 @@ nav {
 
     h2 {
         margin: 0 0 20px 0;
-        padding-right: 190px;
+    }
+
+    &__content {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
     }
 }
 
