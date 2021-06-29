@@ -31,7 +31,7 @@ a {
 }
 
 .menu {
-  padding: 20px 25px 0 25px;
+  padding: 20px 25px 50px 25px;
   background-color: #f2f2f2;
   border-radius: 50px 50px 0 0;
 }
@@ -52,6 +52,7 @@ a {
   text-transform: uppercase;
   font-weight: 300;
   font-size: 1em;
+  margin: 45px 0 0 0;
 }
 
 .menu__content {
@@ -78,6 +79,24 @@ a {
 }
 .menu__button-byline-desc, .menu__button-byline-price {
   margin: 0;
+}
+
+.order-button {
+  background: radial-gradient(ellipse farthest-corner at 20px 0, #FF79DA 0%, #9356DC 100%);
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 0 auto;
+  color: white;
+  border-radius: 30px;
+  padding: 15px 40px;
+  margin-top: 30px;
+  box-shadow: 0 4px 6px #bebebe;
+  cursor: pointer;
+}
+.order-button:hover {
+  opacity: 70%;
+  box-shadow: 0px 8px 6px #bebebe;
 }
 
 .footer {
