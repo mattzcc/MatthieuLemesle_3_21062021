@@ -154,9 +154,13 @@ nav a {
 .label-restaurant__name h4 {
   margin: 0;
 }
+.label-restaurant__heart {
+  font-size: 1.5em;
+}
 .label-restaurant__location {
   font-size: 0.9em;
-  padding: 10px 10px 15px 10px;
+  padding: 0 10px 15px 10px;
+  margin-top: -5px;
 }
 .label-restaurant__location p {
   margin: 0;

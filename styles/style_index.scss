@@ -186,9 +186,14 @@ nav {
         }
     }
 
+    &__heart {
+        font-size: 1.5em;
+    }
+
     &__location {
         font-size: 0.9em;
-        padding: 10px 10px 15px 10px;
+        padding: 0 10px 15px 10px;
+        margin-top: -5px;
 
         p {
             margin: 0;
