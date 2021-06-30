@@ -83,6 +83,7 @@ a {
   background-color: white;
   border-radius: 15px;
   padding: 10px 10px;
+  cursor: pointer;
   box-shadow: 0 2px 4px #bebebe;
 }
 .menu__button-title {
