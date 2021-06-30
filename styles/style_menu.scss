@@ -66,20 +66,27 @@ a {
     }
 }
 
+.menu__grid {
+    display: grid;
+}
+
 .menu__content {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 20px;
+    height: fit-content;
 
     &-subtitle {
         text-transform: uppercase;
         font-weight: 300;
         font-size: 1em;
         margin: 45px 0 -15px 0;
+        height: 19px;
 
         &--underline {
             border: $color-tertiary 2px solid;
             width: 35px;
+            height: 0;
         }
     }
 }
@@ -172,5 +179,27 @@ a {
 
     .footer__icon {
         display: flex;
+    }
+}
+
+// Media Queries
+@media screen and (min-width: 1200px) {
+    .menu__grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 30px;
+    }
+
+    .footer {
+        height: 100px;
+
+        &__bloclinks {
+            flex-direction: row;
+            justify-content: flex-start;
+
+            h4 {
+                padding-right: 100px;
+            }
+        }
     }
 }
