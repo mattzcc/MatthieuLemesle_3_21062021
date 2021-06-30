@@ -14,9 +14,6 @@ a {
   padding-top: 20px;
   padding-bottom: 10px;
 }
-.header__arrow-left {
-  display: none;
-}
 
 .top-content {
   display: block;
@@ -157,15 +154,21 @@ nav a {
 .label-restaurant__name h4 {
   margin: 0;
 }
+.label-restaurant__heart {
+  font-size: 1.5em;
+}
 .label-restaurant__location {
   font-size: 0.9em;
-  padding: 10px 10px 15px 10px;
+  padding: 0 10px 15px 10px;
+  margin-top: -5px;
 }
 .label-restaurant__location p {
   margin: 0;
 }
 
 .label-restaurant__img {
+  display: inline-block;
+  width: 100%;
   position: relative;
 }
 .label-restaurant__img img {
@@ -179,8 +182,9 @@ nav a {
   background-color: #a4f4d1;
   color: #118954;
   font-weight: bold;
+  text-align: center;
   font-size: 0.9em;
-  width: 57px;
+  min-width: 18%;
   padding: 10px 10px;
   border-radius: 5px;
   margin: 0;

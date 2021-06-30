@@ -24,10 +24,6 @@ a {
     text-align: center;
     padding-top: 20px;
     padding-bottom: 10px;
-
-    &__arrow-left {
-        display: none;
-    }
 }
 
 .top-content {
@@ -190,9 +186,14 @@ nav {
         }
     }
 
+    &__heart {
+        font-size: 1.5em;
+    }
+
     &__location {
         font-size: 0.9em;
-        padding: 10px 10px 15px 10px;
+        padding: 0 10px 15px 10px;
+        margin-top: -5px;
 
         p {
             margin: 0;
@@ -203,7 +204,8 @@ nav {
 }
 
 .label-restaurant__img {
-
+    display: inline-block;
+    width: 100%;
     position: relative;
 
     img {
@@ -217,8 +219,9 @@ nav {
         background-color: #a4f4d1;
         color: (darken($color: #a4f4d1, $amount: 50));
         font-weight: bold;
+        text-align: center;
         font-size: 0.9em;
-        width: 57px;
+        min-width: 18%;
         padding: 10px 10px;
         border-radius: 5px;
         margin: 0;
