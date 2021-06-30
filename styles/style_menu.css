@@ -10,22 +10,24 @@ a {
 
 .header {
   display: flex;
-  padding-top: 20px;
-  padding-bottom: 10px;
-  width: 100%;
+  justify-content: center;
+  padding: 20px 0 10px 0;
 }
 
 .header__arrow-left {
   font-size: 1.5em;
+  position: absolute;
+  top: 22px;
+  left: 20px;
 }
 
-.header__img {
-  align-self: center;
-}
-
-.image img {
+.image {
   width: 100%;
   height: 250px;
+}
+.image img {
+  width: 100%;
+  height: 300px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -34,6 +36,7 @@ a {
   padding: 20px 25px 50px 25px;
   background-color: #f2f2f2;
   border-radius: 50px 50px 0 0;
+  position: relative;
 }
 .menu__title {
   display: flex;
@@ -48,17 +51,21 @@ a {
 .menu__title-heart {
   font-size: 1.5em;
 }
-.menu h2 {
-  text-transform: uppercase;
-  font-weight: 300;
-  font-size: 1em;
-  margin: 45px 0 0 0;
-}
 
 .menu__content {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 20px;
+}
+.menu__content-subtitle {
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 1em;
+  margin: 45px 0 -15px 0;
+}
+.menu__content-subtitle--underline {
+  border: #99E2D0 2px solid;
+  width: 35px;
 }
 
 .menu__button {
@@ -66,19 +73,26 @@ a {
   flex-direction: column;
   background-color: white;
   border-radius: 15px;
-  padding: 5px 10px;
+  padding: 10px 10px;
   box-shadow: 0 2px 4px #bebebe;
 }
 .menu__button-title {
-  margin: 0;
+  margin: 0 0 5px 0;
+  font-size: 1.1em;
 }
 
 .menu__button-byline {
   display: flex;
   justify-content: space-between;
 }
-.menu__button-byline-desc, .menu__button-byline-price {
+.menu__button-byline-desc {
   margin: 0;
+  font-size: 0.9em;
+  font-weight: 300;
+}
+.menu__button-byline-price {
+  margin: 0;
+  font-weight: bold;
 }
 
 .order-button {
