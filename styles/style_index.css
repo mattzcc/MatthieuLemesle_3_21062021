@@ -163,6 +163,8 @@ nav a {
 }
 
 .label-restaurant__img {
+  display: inline-block;
+  width: 100%;
   position: relative;
 }
 .label-restaurant__img img {
@@ -176,8 +178,9 @@ nav a {
   background-color: #a4f4d1;
   color: #118954;
   font-weight: bold;
+  text-align: center;
   font-size: 0.9em;
-  width: 57px;
+  min-width: 18%;
   padding: 10px 10px;
   border-radius: 5px;
   margin: 0;
