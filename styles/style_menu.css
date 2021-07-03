@@ -77,6 +77,47 @@ a {
   height: 0;
 }
 
+.anim_menu {
+  -webkit-animation: anim_menu 2000ms;
+          animation: anim_menu 2000ms;
+}
+
+@-webkit-keyframes anim_menu {
+  0% {
+    opacity: 0;
+    transform: translateY(5%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes anim_menu {
+  0% {
+    opacity: 0;
+    transform: translateY(5%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+#content-1 {
+  -webkit-animation-delay: 100ms;
+          animation-delay: 100ms;
+}
+
+#content-2 {
+  -webkit-animation-delay: 300ms;
+          animation-delay: 300ms;
+}
+
+#content-3 {
+  -webkit-animation-delay: 500ms;
+          animation-delay: 500ms;
+}
+
 .menu__button {
   display: flex;
   flex-direction: column;
