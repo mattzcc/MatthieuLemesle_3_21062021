@@ -84,22 +84,22 @@ a {
 
 @-webkit-keyframes anim_menu {
   0% {
-    opacity: 0%;
+    opacity: 0;
     transform: translateY(5%);
   }
   100% {
-    opacity: 100%;
+    opacity: 1;
     transform: translateY(0);
   }
 }
 
 @keyframes anim_menu {
   0% {
-    opacity: 0%;
+    opacity: 0;
     transform: translateY(5%);
   }
   100% {
-    opacity: 100%;
+    opacity: 1;
     transform: translateY(0);
   }
 }
