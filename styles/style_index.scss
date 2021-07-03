@@ -80,8 +80,11 @@ a {
     margin-top: 10px;
     box-shadow: 0 4px 6px $color-shadow;
     cursor: pointer;
+    transform: scale(1);
+    transition: transform 400ms;
 
     &:hover {
+        transform: scale(1.05);
         opacity: 70%;
         box-shadow: 0px 8px 6px $color-shadow;
     }
