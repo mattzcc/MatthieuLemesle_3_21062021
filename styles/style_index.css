@@ -8,6 +8,66 @@ a {
   color: black;
 }
 
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  position: fixed;
+  -webkit-animation: font-page linear 3000ms;
+          animation: font-page linear 3000ms;
+  visibility: hidden;
+  z-index: 1;
+}
+@-webkit-keyframes font-page {
+  0% {
+    visibility: visible;
+    background: white;
+    opacity: 0.8;
+  }
+  100% {
+    background: white;
+    opacity: 0.8;
+  }
+}
+@keyframes font-page {
+  0% {
+    visibility: visible;
+    background: white;
+    opacity: 0.8;
+  }
+  100% {
+    background: white;
+    opacity: 0.8;
+  }
+}
+.loader__anim {
+  width: 70px;
+  height: 70px;
+  border: 10px solid #99E2D0;
+  border-radius: 50%;
+  border-top-color: #9356DC;
+  border-bottom-color: #FF79DA;
+  -webkit-animation: loader linear 3000ms;
+          animation: loader linear 3000ms;
+  visibility: hidden;
+}
+@-webkit-keyframes loader {
+  to {
+    visibility: visible;
+    transform: rotate(1turn);
+    opacity: 1;
+  }
+}
+@keyframes loader {
+  to {
+    visibility: visible;
+    transform: rotate(1turn);
+    opacity: 1;
+  }
+}
+
 .header {
   display: block;
   text-align: center;
