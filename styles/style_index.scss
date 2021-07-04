@@ -19,6 +19,51 @@ a {
     color: $color-titles;
 }
 
+.loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    position: fixed;
+    animation: font-page linear 3000ms;
+    visibility: hidden;
+    z-index: 1;
+
+    @keyframes font-page {
+        0% {
+            visibility: visible;
+            background: white;
+            opacity: .8;
+        }
+
+        100% {
+            background: white;
+            opacity: .8;
+        }
+    }
+
+    &__anim {
+        // margin-top: 350px;
+        width: 70px;
+        height: 70px;
+        border: 10px solid $color-tertiary;
+        border-radius: 50%;
+        border-top-color: $color-primary;
+        border-bottom-color: $color-secondary;
+        animation: loader linear 3000ms;
+        visibility: hidden;
+    }
+
+    @keyframes loader {
+        to {
+            visibility: visible;
+            transform: rotate(1turn);
+            opacity: 1;
+        }
+    }
+}
+
 .header {
     display: block;
     text-align: center;
