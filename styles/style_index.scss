@@ -29,7 +29,7 @@ a {
     animation: font-page linear 3000ms;
     visibility: hidden;
     z-index: 1;
-    background: white;
+    background: white url(../img/logo/ohmyfood@2x.svg) no-repeat center;
 
     @keyframes font-page {
         0% {
@@ -57,7 +57,7 @@ a {
         to {
             visibility: visible;
             transform: rotate(1turn);
-            opacity: 1;
+            opacity: .3;
         }
     }
 }
@@ -239,7 +239,7 @@ nav {
 
         .heart-filled:hover {
             background: linear-gradient(225deg, #9356DC 29%, #FF79DA 85%);
-            -webkit-background-clip: text;
+            background-clip: text;
             -webkit-text-stroke: 0px;
             animation: anim-heart 1000ms ease;
         }
