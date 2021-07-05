@@ -19,23 +19,42 @@ a {
           animation: font-page linear 3000ms;
   visibility: hidden;
   z-index: 1;
+<<<<<<< HEAD
   background: white;
+=======
+>>>>>>> Dev_branch
 }
 @-webkit-keyframes font-page {
   0% {
     visibility: visible;
+<<<<<<< HEAD
     opacity: 0.8;
   }
   100% {
+=======
+    background: white;
+    opacity: 0.8;
+  }
+  100% {
+    background: white;
+>>>>>>> Dev_branch
     opacity: 0.8;
   }
 }
 @keyframes font-page {
   0% {
     visibility: visible;
+<<<<<<< HEAD
     opacity: 0.8;
   }
   100% {
+=======
+    background: white;
+    opacity: 0.8;
+  }
+  100% {
+    background: white;
+>>>>>>> Dev_branch
     opacity: 0.8;
   }
 }
