@@ -63,6 +63,29 @@ a {
 
     &__title-heart {
         font-size: 1.5em;
+        color: transparent;
+        -webkit-text-stroke: 2px black;
+
+        .heart-filled:hover {
+            background: linear-gradient(225deg, #9356DC 29%, #FF79DA 85%);
+            -webkit-background-clip: text;
+            -webkit-text-stroke: 0px;
+            animation: anim-heart 2000ms ease-in-out;
+        }
+
+        @keyframes anim-heart {
+            0% {
+                opacity: .3;
+            }
+
+            50% {
+                opacity: .8;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
     }
 }
 

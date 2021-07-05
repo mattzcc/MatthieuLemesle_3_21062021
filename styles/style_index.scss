@@ -29,26 +29,15 @@ a {
     animation: font-page linear 3000ms;
     visibility: hidden;
     z-index: 1;
-<<<<<<< HEAD
     background: white;
-=======
->>>>>>> Dev_branch
 
     @keyframes font-page {
         0% {
             visibility: visible;
-<<<<<<< HEAD
-=======
-            background: white;
->>>>>>> Dev_branch
             opacity: .8;
         }
 
         100% {
-<<<<<<< HEAD
-=======
-            background: white;
->>>>>>> Dev_branch
             opacity: .8;
         }
     }
@@ -245,26 +234,28 @@ nav {
 
     &__heart {
         font-size: 1.5em;
-        display: inline-block;
-        position: relative;
-        z-index: 1;
-        width: 26.4px;
-        height: 26.4px;
+        color: transparent;
+        -webkit-text-stroke: 2px black;
 
-        &:hover {
-            visibility: hidden;
+        .heart-filled:hover {
+            background: linear-gradient(225deg, #9356DC 29%, #FF79DA 85%);
+            -webkit-background-clip: text;
+            -webkit-text-stroke: 0px;
+            animation: anim-heart 2000ms ease-in-out;
         }
 
-        &--anim {
-            color: transparent;
-            width: inherit;
-            height: inherit;
-            display: inline-block;
-            position: absolute;
-            right: 0;
-            z-index: -1;
-            background: linear-gradient(225deg, rgba(147, 86, 220, 1) 29%, rgba(255, 121, 218, 1) 85%);
-            background-clip: text;
+        @keyframes anim-heart {
+            0% {
+                opacity: .3;
+            }
+
+            50% {
+                opacity: .8;
+            }
+
+            100% {
+                opacity: 1;
+            }
         }
     }
 
@@ -276,36 +267,34 @@ nav {
         p {
             margin: 0;
         }
-
     }
 
-}
-
-.label-restaurant__img {
-    display: inline-block;
-    width: 100%;
-    position: relative;
-
-    img {
+    .label-restaurant__img {
+        display: inline-block;
         width: 100%;
-        height: 190px;
-        object-fit: cover;
-        border-radius: 15px 15px 0 0;
-    }
+        position: relative;
 
-    .label-restaurant__new {
-        background-color: #a4f4d1;
-        color: (darken($color: #a4f4d1, $amount: 50));
-        font-weight: bold;
-        text-align: center;
-        font-size: 0.9em;
-        min-width: 18%;
-        padding: 10px 10px;
-        border-radius: 5px;
-        margin: 0;
-        position: absolute;
-        bottom: 75%;
-        left: 73%;
+        img {
+            width: 100%;
+            height: 190px;
+            object-fit: cover;
+            border-radius: 15px 15px 0 0;
+        }
+
+        .label-restaurant__new {
+            background-color: #a4f4d1;
+            color: (darken($color: #a4f4d1, $amount: 50));
+            font-weight: bold;
+            text-align: center;
+            font-size: 0.9em;
+            min-width: 18%;
+            padding: 10px 10px;
+            border-radius: 5px;
+            margin: 0;
+            position: absolute;
+            bottom: 75%;
+            left: 73%;
+        }
     }
 }
 

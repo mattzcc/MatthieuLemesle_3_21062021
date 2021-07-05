@@ -50,6 +50,37 @@ a {
 }
 .menu__title-heart {
   font-size: 1.5em;
+  color: transparent;
+  -webkit-text-stroke: 2px black;
+}
+.menu__title-heart .heart-filled:hover {
+  background: linear-gradient(225deg, #9356DC 29%, #FF79DA 85%);
+  -webkit-background-clip: text;
+  -webkit-text-stroke: 0px;
+  -webkit-animation: anim-heart 2000ms ease-in-out;
+          animation: anim-heart 2000ms ease-in-out;
+}
+@-webkit-keyframes anim-heart {
+  0% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes anim-heart {
+  0% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .menu__grid {

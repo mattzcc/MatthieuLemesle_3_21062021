@@ -19,42 +19,23 @@ a {
           animation: font-page linear 3000ms;
   visibility: hidden;
   z-index: 1;
-<<<<<<< HEAD
   background: white;
-=======
->>>>>>> Dev_branch
 }
 @-webkit-keyframes font-page {
   0% {
     visibility: visible;
-<<<<<<< HEAD
     opacity: 0.8;
   }
   100% {
-=======
-    background: white;
-    opacity: 0.8;
-  }
-  100% {
-    background: white;
->>>>>>> Dev_branch
     opacity: 0.8;
   }
 }
 @keyframes font-page {
   0% {
     visibility: visible;
-<<<<<<< HEAD
     opacity: 0.8;
   }
   100% {
-=======
-    background: white;
-    opacity: 0.8;
-  }
-  100% {
-    background: white;
->>>>>>> Dev_branch
     opacity: 0.8;
   }
 }
@@ -235,26 +216,37 @@ nav a {
 }
 .label-restaurant__heart {
   font-size: 1.5em;
-  display: inline-block;
-  position: relative;
-  z-index: 1;
-  width: 26.4px;
-  height: 26.4px;
-}
-.label-restaurant__heart:hover {
-  visibility: hidden;
-}
-.label-restaurant__heart--anim {
   color: transparent;
-  width: inherit;
-  height: inherit;
-  display: inline-block;
-  position: absolute;
-  right: 0;
-  z-index: -1;
-  background: linear-gradient(225deg, #9356dc 29%, #ff79da 85%);
+  -webkit-text-stroke: 2px black;
+}
+.label-restaurant__heart .heart-filled:hover {
+  background: linear-gradient(225deg, #9356DC 29%, #FF79DA 85%);
   -webkit-background-clip: text;
-          background-clip: text;
+  -webkit-text-stroke: 0px;
+  -webkit-animation: anim-heart 2000ms ease-in-out;
+          animation: anim-heart 2000ms ease-in-out;
+}
+@-webkit-keyframes anim-heart {
+  0% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes anim-heart {
+  0% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 .label-restaurant__location {
   font-size: 0.9em;
@@ -264,20 +256,19 @@ nav a {
 .label-restaurant__location p {
   margin: 0;
 }
-
-.label-restaurant__img {
+.label-restaurant .label-restaurant__img {
   display: inline-block;
   width: 100%;
   position: relative;
 }
-.label-restaurant__img img {
+.label-restaurant .label-restaurant__img img {
   width: 100%;
   height: 190px;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 15px 15px 0 0;
 }
-.label-restaurant__img .label-restaurant__new {
+.label-restaurant .label-restaurant__img .label-restaurant__new {
   background-color: #a4f4d1;
   color: #118954;
   font-weight: bold;
