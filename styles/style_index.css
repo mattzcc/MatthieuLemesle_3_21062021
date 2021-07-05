@@ -223,12 +223,12 @@ nav a {
   background: linear-gradient(225deg, #9356DC 29%, #FF79DA 85%);
   -webkit-background-clip: text;
   -webkit-text-stroke: 0px;
-  -webkit-animation: anim-heart 2000ms ease-in-out;
-          animation: anim-heart 2000ms ease-in-out;
+  -webkit-animation: anim-heart 1000ms ease;
+          animation: anim-heart 1000ms ease;
 }
 @-webkit-keyframes anim-heart {
   0% {
-    opacity: 0.3;
+    opacity: 0.5;
   }
   50% {
     opacity: 0.8;
@@ -239,7 +239,7 @@ nav a {
 }
 @keyframes anim-heart {
   0% {
-    opacity: 0.3;
+    opacity: 0.5;
   }
   50% {
     opacity: 0.8;
