@@ -147,7 +147,7 @@ a {
 }
 
 .order-button {
-  background: radial-gradient(ellipse farthest-corner at 20px 0, #FF79DA 0%, #9356DC 100%);
+  background: radial-gradient(ellipse farthest-corner at top left, #FF79DA 0%, #9356DC 100%);
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;

@@ -19,26 +19,23 @@ a {
           animation: font-page linear 3000ms;
   visibility: hidden;
   z-index: 1;
+  background: white;
 }
 @-webkit-keyframes font-page {
   0% {
     visibility: visible;
-    background: white;
     opacity: 0.8;
   }
   100% {
-    background: white;
     opacity: 0.8;
   }
 }
 @keyframes font-page {
   0% {
     visibility: visible;
-    background: white;
     opacity: 0.8;
   }
   100% {
-    background: white;
     opacity: 0.8;
   }
 }
@@ -113,7 +110,7 @@ a {
 }
 
 .button {
-  background: radial-gradient(ellipse farthest-corner at 20px 0, #FF79DA 0%, #9356DC 100%);
+  background: radial-gradient(ellipse farthest-corner at top left, #FF79DA 0%, #9356DC 100%);
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
@@ -129,7 +126,7 @@ a {
 }
 .button:hover {
   transform: scale(1.05);
-  opacity: 70%;
+  opacity: 0.7;
   box-shadow: 0px 8px 6px #bebebe;
 }
 
@@ -219,6 +216,26 @@ nav a {
 }
 .label-restaurant__heart {
   font-size: 1.5em;
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  width: 26.4px;
+  height: 26.4px;
+}
+.label-restaurant__heart:hover {
+  visibility: hidden;
+}
+.label-restaurant__heart--anim {
+  color: transparent;
+  width: inherit;
+  height: inherit;
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  z-index: -1;
+  background: linear-gradient(225deg, #9356dc 29%, #ff79da 85%);
+  -webkit-background-clip: text;
+          background-clip: text;
 }
 .label-restaurant__location {
   font-size: 0.9em;
