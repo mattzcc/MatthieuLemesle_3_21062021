@@ -29,16 +29,26 @@ a {
     animation: font-page linear 3000ms;
     visibility: hidden;
     z-index: 1;
+<<<<<<< HEAD
+    background: white;
+=======
+>>>>>>> Dev_branch
 
     @keyframes font-page {
         0% {
             visibility: visible;
+<<<<<<< HEAD
+=======
             background: white;
+>>>>>>> Dev_branch
             opacity: .8;
         }
 
         100% {
+<<<<<<< HEAD
+=======
             background: white;
+>>>>>>> Dev_branch
             opacity: .8;
         }
     }
@@ -115,7 +125,7 @@ a {
 }
 
 .button {
-    background: radial-gradient(ellipse farthest-corner at 20px 0, $color-secondary 0%, $color-primary 100%);
+    background: radial-gradient(ellipse farthest-corner at top left, $color-secondary 0%, $color-primary 100%);
     width: max-content;
     height: 100%;
     color: white;
@@ -129,7 +139,7 @@ a {
 
     &:hover {
         transform: scale(1.05);
-        opacity: 70%;
+        opacity: .7;
         box-shadow: 0px 8px 6px $color-shadow;
     }
 }
@@ -235,6 +245,27 @@ nav {
 
     &__heart {
         font-size: 1.5em;
+        display: inline-block;
+        position: relative;
+        z-index: 1;
+        width: 26.4px;
+        height: 26.4px;
+
+        &:hover {
+            visibility: hidden;
+        }
+
+        &--anim {
+            color: transparent;
+            width: inherit;
+            height: inherit;
+            display: inline-block;
+            position: absolute;
+            right: 0;
+            z-index: -1;
+            background: linear-gradient(225deg, rgba(147, 86, 220, 1) 29%, rgba(255, 121, 218, 1) 85%);
+            background-clip: text;
+        }
     }
 
     &__location {

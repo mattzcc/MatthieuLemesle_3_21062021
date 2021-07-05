@@ -151,7 +151,7 @@ a {
 }
 
 .order-button {
-    background: radial-gradient(ellipse farthest-corner at 20px 0, $color-secondary 0%, $color-primary 100%);
+    background: radial-gradient(ellipse farthest-corner at top left, $color-secondary 0%, $color-primary 100%);
     width: max-content;
     margin: 0 auto;
     color: white;
