@@ -29,12 +29,12 @@ a {
     animation: font-page linear 3000ms;
     visibility: hidden;
     z-index: 1;
-    background: white url(../img/logo/ohmyfood@2x.svg) no-repeat center;
+    background: rgb(202, 202, 202) url(../img/logo/ohmyfood@2x.svg) no-repeat center;
 
     @keyframes font-page {
         0% {
             visibility: visible;
-            opacity: .8;
+            opacity: 1;
         }
 
         100% {
