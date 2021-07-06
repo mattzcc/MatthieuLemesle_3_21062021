@@ -163,7 +163,7 @@ a {
   overflow: hidden;
 }
 .menu__button:hover {
-  padding-right: 80px;
+  padding-right: 25%;
 }
 .menu__button:hover .addtocart {
   visibility: visible;
