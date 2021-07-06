@@ -159,23 +159,27 @@ a {
   cursor: pointer;
   box-shadow: 0 2px 4px #bebebe;
   position: relative;
-  transition: padding-right 500ms ease-in-out;
+  transition: padding-right 300ms ease-in-out;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .menu__button:hover {
-  padding-right: 75px;
+  padding-right: 80px;
 }
 .menu__button:hover .addtocart {
   visibility: visible;
-  -webkit-animation: anim-scale-check 500ms ease-in-out;
-          animation: anim-scale-check 500ms ease-in-out;
+  -webkit-animation: anim-scale-check 300ms ease-in-out;
+          animation: anim-scale-check 300ms ease-in-out;
 }
 .menu__button:hover .check-icon {
-  -webkit-animation: rotate-center 500ms ease-in-out;
-          animation: rotate-center 500ms ease-in-out;
+  -webkit-animation: rotate-center 300ms ease-in-out;
+          animation: rotate-center 300ms ease-in-out;
 }
 .menu__button-title {
   margin: 0 0 5px 0;
   font-size: 1.1em;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .menu__button .addtocart {
   display: flex;
@@ -239,10 +243,13 @@ a {
   margin: 0;
   font-size: 0.9em;
   font-weight: 300;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .menu__button-byline-price {
   margin: 0;
   font-weight: bold;
+  padding-left: 10px;
 }
 
 .order-button {

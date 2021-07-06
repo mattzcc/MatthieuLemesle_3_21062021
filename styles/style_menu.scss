@@ -151,27 +151,31 @@ a {
     cursor: pointer;
     @include shadow;
     position: relative;
-    transition: padding-right 500ms ease-in-out;
-    // white-space: nowrap;
+    transition: padding-right 300ms ease-in-out;
+    white-space: nowrap;
+    overflow: hidden;
+
     // text-overflow: ellipsis;
     // overflow: hidden;
 
     &:hover {
-        padding-right: 75px;
+        padding-right: 80px;
 
         .addtocart {
             visibility: visible;
-            animation: anim-scale-check 500ms ease-in-out;
+            animation: anim-scale-check 300ms ease-in-out;
         }
 
         .check-icon {
-            animation: rotate-center 500ms ease-in-out;
+            animation: rotate-center 300ms ease-in-out;
         }
     }
 
     &-title {
         margin: 0 0 5px 0;
         font-size: 1.1em;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 
     .addtocart {
@@ -226,11 +230,14 @@ a {
         margin: 0;
         font-size: 0.9em;
         font-weight: 300;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 
     &-price {
         margin: 0;
         font-weight: bold;
+        padding-left: 10px;
     }
 }
 
