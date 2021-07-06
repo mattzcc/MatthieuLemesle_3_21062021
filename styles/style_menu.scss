@@ -68,7 +68,8 @@ a {
 
         .heart-filled:hover {
             background: linear-gradient(225deg, #9356DC 29%, #FF79DA 85%);
-            background-clip: text;
+            // background-clip: text;
+            -webkit-text-background-clip: text;
             -webkit-text-stroke: 0px;
             animation: anim-heart 300ms ease;
         }
@@ -154,9 +155,6 @@ a {
     transition: padding-right 300ms ease-in-out;
     white-space: nowrap;
     overflow: hidden;
-
-    // text-overflow: ellipsis;
-    // overflow: hidden;
 
     &:hover {
         padding-right: 80px;

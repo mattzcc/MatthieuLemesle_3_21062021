@@ -222,7 +222,6 @@ nav a {
 .label-restaurant__heart .heart-filled:hover {
   background: linear-gradient(225deg, #9356DC 29%, #FF79DA 85%);
   -webkit-background-clip: text;
-          background-clip: text;
   -webkit-text-stroke: 0px;
   -webkit-animation: anim-heart 300ms ease;
           animation: anim-heart 300ms ease;
