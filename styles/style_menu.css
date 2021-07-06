@@ -166,9 +166,10 @@ a {
 }
 .menu__button:hover .addtocart {
   visibility: visible;
-  transform: translateX(-100%);
+  -webkit-animation: anim-scale-check 500ms ease-in-out;
+          animation: anim-scale-check 500ms ease-in-out;
 }
-.menu__button:hover .addtocart .check-icon {
+.menu__button:hover .check-icon {
   -webkit-animation: rotate-center 500ms ease-in-out;
           animation: rotate-center 500ms ease-in-out;
 }
@@ -184,11 +185,30 @@ a {
   position: absolute;
   height: 100%;
   width: 20%;
-  left: 100%;
+  left: 80%;
   top: 0;
   border-radius: 0 15px 15px 0;
-  transition: transform 500ms forwards;
   visibility: hidden;
+}
+@-webkit-keyframes anim-scale-check {
+  0% {
+    transform: scaleX(0.1);
+    transform-origin: 100% 100%;
+  }
+  100% {
+    transform: scaleX(1);
+    transform-origin: 100% 100%;
+  }
+}
+@keyframes anim-scale-check {
+  0% {
+    transform: scaleX(0.1);
+    transform-origin: 100% 100%;
+  }
+  100% {
+    transform: scaleX(1);
+    transform-origin: 100% 100%;
+  }
 }
 .menu__button .addtocart .check-icon {
   color: white;
