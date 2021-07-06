@@ -70,7 +70,7 @@ a {
             background: linear-gradient(225deg, #9356DC 29%, #FF79DA 85%);
             background-clip: text;
             -webkit-text-stroke: 0px;
-            animation: anim-heart 1000ms ease;
+            animation: anim-heart 300ms ease;
         }
 
         @keyframes anim-heart {
@@ -151,12 +151,18 @@ a {
     cursor: pointer;
     @include shadow;
     position: relative;
+    transition: padding-right 500ms ease-in-out;
 
-    &:hover .addtocart {
-        animation: slide-left 0.5s ease-in-out both;
+    &:hover {
+        padding-right: 75px;
 
-        .check-icon {
-            animation: rotate-center 0.5s ease-in-out both;
+        .addtocart {
+            visibility: visible;
+            transform: translateX(-100%);
+
+            .check-icon {
+                animation: rotate-center 500ms ease-in-out;
+            }
         }
     }
 
@@ -167,25 +173,17 @@ a {
 
     .addtocart {
         display: flex;
+        justify-content: center;
         align-items: center;
         background: $color-tertiary;
         position: absolute;
         height: 100%;
-        left: 327px;
+        width: 20%;
+        left: 100%;
         top: 0;
-        padding: 0 20px;
         border-radius: 0 15px 15px 0;
-
-
-        @keyframes slide-left {
-            0% {
-                transform: translateX(0);
-            }
-
-            100% {
-                transform: translateX(-100px);
-            }
-        }
+        transition: transform 500ms forwards;
+        visibility: hidden;
 
         .check-icon {
             color: white;

@@ -19,7 +19,7 @@ a {
           animation: font-page linear 3000ms;
   visibility: hidden;
   z-index: 1;
-  background: #cacaca url(../img/logo/ohmyfood@2x.svg) no-repeat center;
+  background: white url(../img/logo/ohmyfood@2x.svg) no-repeat center;
 }
 @-webkit-keyframes font-page {
   0% {
@@ -27,7 +27,7 @@ a {
     opacity: 1;
   }
   100% {
-    opacity: 0.8;
+    opacity: 1;
   }
 }
 @keyframes font-page {
@@ -36,13 +36,13 @@ a {
     opacity: 1;
   }
   100% {
-    opacity: 0.8;
+    opacity: 1;
   }
 }
 .loader__anim {
   width: 70px;
   height: 70px;
-  border: 10px solid #99E2D0;
+  border: 15px solid #99E2D0;
   border-radius: 50%;
   border-top-color: #9356DC;
   border-bottom-color: #FF79DA;
@@ -224,8 +224,8 @@ nav a {
   -webkit-background-clip: text;
           background-clip: text;
   -webkit-text-stroke: 0px;
-  -webkit-animation: anim-heart 1000ms ease;
-          animation: anim-heart 1000ms ease;
+  -webkit-animation: anim-heart 300ms ease;
+          animation: anim-heart 300ms ease;
 }
 @-webkit-keyframes anim-heart {
   0% {

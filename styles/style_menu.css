@@ -58,8 +58,8 @@ a {
   -webkit-background-clip: text;
           background-clip: text;
   -webkit-text-stroke: 0px;
-  -webkit-animation: anim-heart 1000ms ease;
-          animation: anim-heart 1000ms ease;
+  -webkit-animation: anim-heart 300ms ease;
+          animation: anim-heart 300ms ease;
 }
 @-webkit-keyframes anim-heart {
   0% {
@@ -159,14 +159,18 @@ a {
   cursor: pointer;
   box-shadow: 0 2px 4px #bebebe;
   position: relative;
+  transition: padding-right 500ms ease-in-out;
+}
+.menu__button:hover {
+  padding-right: 75px;
 }
 .menu__button:hover .addtocart {
-  -webkit-animation: slide-left 0.5s ease-in-out both;
-          animation: slide-left 0.5s ease-in-out both;
+  visibility: visible;
+  transform: translateX(-100%);
 }
 .menu__button:hover .addtocart .check-icon {
-  -webkit-animation: rotate-center 0.5s ease-in-out both;
-          animation: rotate-center 0.5s ease-in-out both;
+  -webkit-animation: rotate-center 500ms ease-in-out;
+          animation: rotate-center 500ms ease-in-out;
 }
 .menu__button-title {
   margin: 0 0 5px 0;
@@ -174,30 +178,17 @@ a {
 }
 .menu__button .addtocart {
   display: flex;
+  justify-content: center;
   align-items: center;
   background: #99E2D0;
   position: absolute;
   height: 100%;
-  left: 327px;
+  width: 20%;
+  left: 100%;
   top: 0;
-  padding: 0 20px;
   border-radius: 0 15px 15px 0;
-}
-@-webkit-keyframes slide-left {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-100px);
-  }
-}
-@keyframes slide-left {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-100px);
-  }
+  transition: transform 500ms forwards;
+  visibility: hidden;
 }
 .menu__button .addtocart .check-icon {
   color: white;

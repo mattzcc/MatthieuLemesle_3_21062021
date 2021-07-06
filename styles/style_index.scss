@@ -29,7 +29,7 @@ a {
     animation: font-page linear 3000ms;
     visibility: hidden;
     z-index: 1;
-    background: rgb(202, 202, 202) url(../img/logo/ohmyfood@2x.svg) no-repeat center;
+    background: white url(../img/logo/ohmyfood@2x.svg) no-repeat center;
 
     @keyframes font-page {
         0% {
@@ -38,14 +38,14 @@ a {
         }
 
         100% {
-            opacity: .8;
+            opacity: 1;
         }
     }
 
     &__anim {
         width: 70px;
         height: 70px;
-        border: 10px solid $color-tertiary;
+        border: 15px solid $color-tertiary;
         border-radius: 50%;
         border-top-color: $color-primary;
         border-bottom-color: $color-secondary;
@@ -241,7 +241,7 @@ nav {
             background: linear-gradient(225deg, #9356DC 29%, #FF79DA 85%);
             background-clip: text;
             -webkit-text-stroke: 0px;
-            animation: anim-heart 1000ms ease;
+            animation: anim-heart 300ms ease;
         }
 
         @keyframes anim-heart {
