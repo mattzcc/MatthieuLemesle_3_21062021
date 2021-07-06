@@ -68,8 +68,8 @@ a {
 
         .heart-filled:hover {
             background: linear-gradient(225deg, #9356DC 29%, #FF79DA 85%);
-            // background-clip: text;
-            -webkit-text-background-clip: text;
+            background-clip: content-box;
+            -webkit-background-clip: text;
             -webkit-text-stroke: 0px;
             animation: anim-heart 300ms ease;
         }
