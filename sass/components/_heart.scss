@@ -1,0 +1,15 @@
+.menu__title-heart {
+    @include heart-empty;
+
+    .heart-filled:hover {
+        @include heart-full;
+    }
+}
+
+.label-restaurant__heart {
+    @include heart-empty;
+
+    .heart-filled:hover {
+        @include heart-full;
+    }
+}

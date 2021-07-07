@@ -1,0 +1,50 @@
+.footer {
+    background-color: $color-footer;
+    display: block;
+    height: 180px;
+    padding: 20px 25px 0 25px;
+    color: white;
+
+    @include screen-desktop {
+        height: 100px;
+    }
+
+    a {
+        color: white;
+    }
+
+    &__logo {
+        font-family: 'Shrikhand', cursive;
+        padding-bottom: 15px;
+        font-size: 1.2em;
+    }
+}
+
+.footer__bloclinks {
+    display: flex;
+    flex-direction: column;
+
+    @include screen-desktop {
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+
+    h4 {
+        font-size: 0.9em;
+        font-weight: normal;
+        padding-bottom: 10px;
+
+        @include screen-desktop {
+            padding-right: 100px;
+        }
+    }
+
+    i {
+        padding-right: 5px;
+    }
+
+    .footer__icon {
+        display: flex;
+    }
+}

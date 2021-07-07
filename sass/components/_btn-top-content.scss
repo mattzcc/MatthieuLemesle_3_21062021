@@ -1,0 +1,10 @@
+.button {
+    @include btn-style;
+    height: 100%;
+    padding: 15px;
+    margin-top: 10px;
+
+    &:hover {
+        @include btn-style-hover;
+    }
+}
