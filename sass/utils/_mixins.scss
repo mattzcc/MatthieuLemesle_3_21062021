@@ -15,7 +15,7 @@
 
 @mixin btn-style-hover {
     opacity: .7;
-    box-shadow: 0px 8px 6px $color-shadow;
+    box-shadow: 0 8px 6px $color-shadow;
 }
 
 @mixin heart-empty {
@@ -28,7 +28,7 @@
     background: linear-gradient(225deg, #9356DC 29%, #FF79DA 85%);
     background-clip: content-box;
     -webkit-background-clip: text;
-    -webkit-text-stroke: 0px;
+    -webkit-text-stroke: 0;
     -webkit-animation: anim-heart 300ms ease;
     animation: anim-heart 300ms ease;
 }
