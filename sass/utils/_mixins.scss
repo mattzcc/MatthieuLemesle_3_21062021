@@ -29,8 +29,8 @@
     background-clip: content-box;
     -webkit-background-clip: text;
     -webkit-text-stroke: 0;
-    -webkit-animation: anim-heart 300ms ease;
-    animation: anim-heart 300ms ease;
+    -webkit-animation: anim-heart 400ms ease-in;
+    animation: anim-heart 400ms ease-in;
 }
 
 @mixin screen-tablet {
