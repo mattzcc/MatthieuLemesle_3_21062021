@@ -1,0 +1,41 @@
+.top-content {
+    display: block;
+    text-align: center;
+
+    &__search {
+        display: flex;
+        justify-content: center;
+        background-color: #E9E9E9;
+        padding: 15px 10px;
+        box-shadow: 0 2px 2px $color-shadow inset;
+    }
+
+    &__logoloc {
+        padding-left: 60px;
+    }
+
+    &__searchfield {
+        background-color: transparent;
+        border: none;
+        padding-left: 15px;
+        font-size: 0.9em;
+    }
+
+    &__desc {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background-color: $color-background;
+        padding-top: 30px;
+        padding-bottom: 50px;
+
+        h1 {
+            width: 70%;
+        }
+
+        p {
+            font-weight: 100;
+            width: 80%;
+        }
+    }
+}

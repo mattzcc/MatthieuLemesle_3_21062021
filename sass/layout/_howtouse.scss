@@ -1,0 +1,25 @@
+.howtouse {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 25px;
+
+    h2 {
+        margin-bottom: 20px;
+    }
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    grid-gap: 20px;
+
+    @include screen-desktop {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 30px;
+    }
+
+    a {
+        width: 100%;
+    }
+}
