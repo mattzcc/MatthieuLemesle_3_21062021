@@ -9,9 +9,23 @@
     animation: font-page linear 3000ms;
     visibility: hidden;
     z-index: 1;
-    background: white url(../img/logo/ohmyfood@2x.svg) no-repeat center;
+    // background: white url(/img/logo/ohmyfood@2x.svg) no-repeat center;
+    background: white;
+
+    &__logo {
+        position: relative;
+        display: inline-block;
+        color: black;
+        font-size: 2em;
+        text-align: center;
+        opacity: .8;
+        z-index: 2;
+        transform: scale(1);
+        animation: loader-logo ease 3000ms;
+    }
 
     &__anim {
+        position: absolute;
         width: 70px;
         height: 70px;
         border: 15px solid $color-tertiary;
@@ -21,5 +35,6 @@
         -webkit-animation: loader linear 3000ms;
         animation: loader linear 3000ms;
         visibility: hidden;
+        z-index: 3;
     }
 }

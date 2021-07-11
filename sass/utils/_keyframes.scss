@@ -36,6 +36,21 @@
     }
 }
 
+@keyframes loader-logo {
+    0% {
+        opacity: 1;
+    }
+
+    60% {
+        opacity: 0.8;
+    }
+
+    100% {
+        letter-spacing: 0.5em;
+        opacity: 0;
+    }
+}
+
 @-webkit-keyframes anim-heart {
     0% {
         opacity: .1;
