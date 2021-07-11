@@ -10,14 +10,13 @@
     }
 
     a {
+        display: inline-block;
         color: white;
         width: fit-content;
         height: fit-content;
     }
 
     &__logo {
-        font-family: 'Shrikhand', cursive;
-        padding-bottom: 15px;
         font-size: 1.2em;
     }
 }
@@ -26,24 +25,31 @@
     display: flex;
     flex-direction: column;
 
+    @for $i from 1 through 4 {
+        .link#{$i} {
+            padding-top: .5em;
+        }
+    }
+
     @include screen-desktop {
         flex-direction: row;
         justify-content: flex-start;
-    }
 
+        @for $i from 1 through 4 {
+            .link#{$i} {
+                padding-right: 7em;
+            }
+        }
+    }
 
     h4 {
         font-size: 0.9em;
         font-weight: normal;
-        line-height: 2em;
-
-        @include screen-desktop {
-            padding-right: 100px;
-        }
     }
 
     i {
         padding-right: 5px;
+        line-height: 1.5em;
     }
 
     .footer__icon {
